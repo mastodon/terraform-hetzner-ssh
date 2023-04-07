@@ -9,12 +9,12 @@ output "user_key_ids" {
 }
 
 output "admin_key_fingerprints" {
-  description = "Hetzner IDs for admin SSH keys"
+  description = "SSH fingerprints for admin SSH keys"
   value       = hcloud_ssh_key.admin_keys.*.fingerprint
 }
 
 output "user_key_fingerprints" {
-  description = "Hetzner IDs for user SSH keys"
+  description = "SSH fingerprints for user SSH keys"
   value       = hcloud_ssh_key.user_keys.*.fingerprint
 }
 
